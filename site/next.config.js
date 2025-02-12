@@ -10,7 +10,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  basePath: '/doubtfulturnip-kasm-registry/1.1/',
+  basePath: '/doubtfulturnip-kasm-registry/1.1',
   trailingSlash: true,
   images: {
     unoptimized: true,
