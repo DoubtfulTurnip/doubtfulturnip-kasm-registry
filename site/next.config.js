@@ -4,7 +4,7 @@ const nextConfig = {
   env: {
     name: 'DoubtfulTurnip',
     description: 'The unofficial store for Kasm supported workspaces.',
-    icon: '/img/logo.svg',
+    icon: '/img/test.jpg',
     listUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry',
     contactUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry',
   },
