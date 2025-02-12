@@ -7,6 +7,7 @@ const nextConfig = {
     icon: '/img/test.jpg',
     listUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry',
     contactUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry',
+    schema: '1.1',
   },
   reactStrictMode: true,
   swcMinify: true,
