@@ -1,17 +1,9 @@
 {
-  "description": "Webcheck is a service that monitors websites and verifies web functionality. This custom Kasm image runs a Node.js application built from source.",
+  "description": "Comprehensive, on-demand open source intelligence for any website",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "webcheck.png",
+  "image_src": "web-check.png",
   "run_config": {
     "hostname": "kasm"
-  },
-  "exec_config": {
-    "go": {
-      "cmd": "yarn serve --cwd /web-check"
-    },
-    "assign": {
-      "cmd": "yarn serve --cwd /web-check"
-    }
   },
   "categories": [
     "Web Service"
