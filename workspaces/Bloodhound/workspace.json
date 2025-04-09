@@ -7,7 +7,7 @@
     "privileged": true
   },
   "categories": [
-    "SECURITY"
+    "Security"
   ],
   "friendly_name": "Bloodhound",
   "architecture": [
