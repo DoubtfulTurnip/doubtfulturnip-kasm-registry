@@ -18,7 +18,7 @@
       "image": "bukshee/webcheck-kasm:latest",
       "uncompressed_size_mb": 500,
       "available_tags": [
-        "latest"
+        "1.16.1"
       ]
     }
   ]
