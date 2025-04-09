@@ -1,7 +1,7 @@
 {
-  "description": "Comprehensive, on-demand open source intelligence for any website",
+  "description": "BloodHound is a monolithic web application composed of an embedded React frontend with Sigma.js and a Go based REST API backend. It is deployed with a Postgresql application database and a Neo4j graph database, and is fed by the SharpHound and AzureHound data collectors.",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "web-check.png",
+  "image_src": "https://github.com/SpecterOps/BloodHound/raw/main/cmd/ui/public/img/logo-secondary-transparent-full.svg",
   "run_config": {
     "hostname": "kasm",
     "privileged": true
