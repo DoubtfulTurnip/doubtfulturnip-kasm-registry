@@ -6,7 +6,7 @@
     "hostname": "kasm"
   },
   "categories": [
-    "Web Service"
+    "OSINT"
   ],
   "friendly_name": "Webcheck",
   "architecture": [
