@@ -17,10 +17,10 @@
   "compatibility": [
     {
       "version": "1.17.x",
-      "image": "bukshee/kasm-slasher:latest",
+      "image": "bukshee/kasm-slasher:1.17.0",
       "uncompressed_size_mb": 500,
       "available_tags": [
-        "latest"
+        "1.17.0"
       ]
     }
   ]
