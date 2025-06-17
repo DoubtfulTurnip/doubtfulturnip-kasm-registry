@@ -15,10 +15,10 @@
   "compatibility": [
     {
       "version": "1.17.x",
-      "image": "bukshee/webcheck-kasm:1.16.1",
+      "image": "bukshee/webcheck-kasm:1.17.0",
       "uncompressed_size_mb": 500,
       "available_tags": [
-        "1.16.1"
+        "1.17.0"
       ]
     }
   ]
