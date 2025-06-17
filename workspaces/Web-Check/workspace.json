@@ -14,7 +14,7 @@
   ],
   "compatibility": [
     {
-      "version": "1.16.x",
+      "version": "1.17.x",
       "image": "bukshee/webcheck-kasm:1.16.1",
       "uncompressed_size_mb": 500,
       "available_tags": [
