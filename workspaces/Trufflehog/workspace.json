@@ -12,10 +12,10 @@
   "compatibility": [
     {
       "version": "1.17.x",
-      "image": "bukshee/trufflehog-kasm:latest",
+      "image": "bukshee/trufflehog-kasm:1.17.0",
       "uncompressed_size_mb": 600,
       "available_tags": [
-        "latest"
+        "1.17.0"
       ]
     }
   ]
