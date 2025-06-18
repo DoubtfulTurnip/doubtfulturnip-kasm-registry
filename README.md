@@ -7,7 +7,7 @@
 3. Paste the registry URL:
 
    ```
-   https://<your-username>.github.io/doubtfulturnip-kasm-registry/
+   https://doubtfulturnip.github.io/doubtfulturnip-kasm-registry/
    ```
 4. Click **Add Registry**
 
