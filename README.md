@@ -1,4 +1,4 @@
-```markdown
+
 # DoubtfulTurnip Kasm Workspaces Registry
 
 ## Add this registry to your Kasm instance
@@ -23,4 +23,4 @@ These workspaces are currently in the registry:
 - Web-Check
 
 Happy Kasm’ing! 🚀
-```
+
