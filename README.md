@@ -21,7 +21,7 @@ Graph-based Active Directory analysis. Maps users, sessions, and privileges to i
 
 ### Epaneul
 
-Web endpoint discovery using tools like `ffuf` and `gobuster` to uncover hidden directories, files, and parameters.
+Epagneul is a tool to visualize and investigate windows event logs. 
 
 ### LogonTracer
 
@@ -29,15 +29,15 @@ Visualizes Windows Security Event logs to track logon behavior and lateral movem
 
 ### Slasher
 
-Content discovery and brute-force tooling (e.g., `wfuzz`, `dirsearch`, `hydra`) to find hidden content and weak credentials.
+Slasher is a bulk IOC checker. Paste hashes, IPs or domains, let Slasher query VirusTotal in parallel, watch progress live, then export results as a CSV file — all from a single web interface.
 
 ### TruffleHog
 
-Scans for high-entropy secrets and credential patterns in local filesystems or repositories. Supports 800+ secret types.
+Scans for high-entropy secrets and credential patterns in local filesystems or repositories. Supports 800+ secret types. Currently WIP, this will only scan a website.
 
 ### Web-Check
 
-A web security scanning suite including `OWASP ZAP`, `wpscan`, and `Nikto`. Automates detection of known vulnerabilities and misconfigurations.
+Get an insight into the inner-workings of a given website: uncover potential attack vectors, analyse server architecture, view security configurations, and learn what technologies a site is using.
 
 ---
 
