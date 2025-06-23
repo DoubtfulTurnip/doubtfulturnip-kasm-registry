@@ -3,7 +3,8 @@
   "docker_registry": "https://index.docker.io/v1/",
   "image_src": "socialanalyzer.png",
   "run_config": {
-    "hostname": "social-analyzer"
+    "hostname": "kasm",
+    "privileged": true
   },
   "categories": [
     "OSINT",
