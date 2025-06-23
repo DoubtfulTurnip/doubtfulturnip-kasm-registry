@@ -1,7 +1,7 @@
 {
   "description": "On-demand OSINT Social Analyzer with integrated Selenium grid for web-based investigations",
   "docker_registry": "https://index.docker.io/v1/",
-  "image_src": "social-analyzer.png",
+  "image_src": "socialanalyzer.png",
   "run_config": {
     "hostname": "social-analyzer"
   },
