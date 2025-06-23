@@ -1,11 +1,11 @@
 {
-  "description": "A lightweight web interface to scan websites for leaked secrets, credentials, and tokens using TruffleHog. Built for use inside a Kasm workspace.",
+  "description": "A lightweight web interface to scan services for leaked secrets, credentials, and tokens using TruffleHog. Built for use inside a Kasm workspace.",
   "docker_registry": "https://index.docker.io/v1/",
   "image_src": "trufflehog.png",
   "categories": [
     "Security"
   ],
-  "friendly_name": "TruffleHog Web Scanner",
+  "friendly_name": "TruffleHog Scanner",
   "architecture": [
     "amd64"
   ],
