@@ -8,7 +8,7 @@
   "categories": [
     "OSINT"
   ],
-  "friendly_name": "Sherlock WebUI",
+  "friendly_name": "Sherlock",
   "architecture": [
     "amd64"
   ],
