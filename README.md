@@ -37,7 +37,7 @@ A tool for analyzing and finding a person’s presence across over 300 social me
 A post-processing analysis tool that takes Hayabusa and Chainsaw output to generate high-level insights, identify suspicious behavior, and visualize TTPs mapped to MITRE ATT&CK.
 
 ### TruffleHog  
-Scans for high-entropy secrets and credential patterns in local filesystems or repositories. Supports 800+ secret types. Currently WIP, this will only scan a website.
+Scans for high-entropy secrets and credential patterns in local filesystems or repositories. Supports 800+ secret types. Provides a Web-UI to run scans.
 
 ### Web-Check  
 Get an insight into the inner-workings of a given website: uncover potential attack vectors, analyze server architecture, view security configurations, and learn what technologies a site is using.
