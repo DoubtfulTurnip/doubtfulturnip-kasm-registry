@@ -5,22 +5,15 @@
   "run_config": {
     "hostname": "takajo"
   },
-  "categories": [
-    "Security",
-    "Forensics"
-  ],
+  "categories": ["Security", "Forensics"],
   "friendly_name": "Takajō Forensics",
-  "architecture": [
-    "amd64"
-  ],
+  "architecture": ["amd64"],
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "bukshee/takajo-kasm:1.17.0",
+      "version": "1.18.x",
+      "image": "bukshee/takajo-kasm:1.18.0",
       "uncompressed_size_mb": 800,
-      "available_tags": [
-        "1.17.0"
-      ]
+      "available_tags": ["1.18.0"]
     }
   ]
 }

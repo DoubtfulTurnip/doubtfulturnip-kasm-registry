@@ -6,22 +6,15 @@
     "hostname": "kasm",
     "privileged": true
   },
-  "categories": [
-    "Security",
-    "OSINT"
-  ],
+  "categories": ["Security", "OSINT"],
   "friendly_name": "Slasher",
-  "architecture": [
-    "amd64"
-  ],
+  "architecture": ["amd64"],
   "compatibility": [
     {
-      "version": "1.17.x",
-      "image": "bukshee/slasher-kasm:1.17.0",
+      "version": "1.18.x",
+      "image": "bukshee/slasher-kasm:1.18.0",
       "uncompressed_size_mb": 500,
-      "available_tags": [
-        "1.17.0"
-      ]
+      "available_tags": ["1.18.0"]
     }
   ]
 }
