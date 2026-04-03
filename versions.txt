@@ -1,5 +1,9 @@
 1.0
 1.1
+depfu_update_processing_npm_folder-hash-4.1.2
+depfu_update_site_yarn_autoprefixer-10.4.27
+depfu_update_site_yarn_postcss-8.5.8
+depfu_update_site_yarn_react-select-5.10.2
 feature_dependency_update
 snyk-fix-a41ccfff91d082b9497d020e50aeeccf
 snyk-fix-c4e301332d9e61d14f7a1b6613e75e74
