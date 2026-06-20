@@ -9,6 +9,7 @@ const nextConfig = {
     contactUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry/issues',
   },
   reactStrictMode: true,
+  output: 'export',
   swcMinify: true,
   basePath: '/doubtfulturnip-kasm-registry/1.1',
   trailingSlash: true,
