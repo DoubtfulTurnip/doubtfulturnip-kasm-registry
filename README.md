@@ -68,4 +68,32 @@ Source Dockerfiles and GitHub Actions workflows are in the companion repository:
 
 ---
 
+## Upstream Projects & Licences
+
+This registry packages the following open-source tools as Kasm workspaces. All original software remains the property of its respective authors; only the Kasm packaging layer is provided here.
+
+| Tool | Author / Organisation | Licence | Source |
+|------|-----------------------|---------|--------|
+| BloodHound CE | SpecterOps | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [github.com/SpecterOps/BloodHound](https://github.com/SpecterOps/BloodHound) |
+| Epagneul | jurelou | No licence declared — all rights reserved | [github.com/jurelou/epagneul](https://github.com/jurelou/epagneul) |
+| Sherlock | Sherlock Project | [MIT](https://opensource.org/licenses/MIT) | [github.com/sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) |
+| Slasher | Hexastrike | [MIT](https://opensource.org/licenses/MIT) | [github.com/Hexastrike/Slasher](https://github.com/Hexastrike/Slasher) |
+| Social Analyzer | qeeqbox | [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) | [github.com/qeeqbox/social-analyzer](https://github.com/qeeqbox/social-analyzer) |
+| Hayabusa | Yamato Security | [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) | [github.com/Yamato-Security/hayabusa](https://github.com/Yamato-Security/hayabusa) |
+| Takajō | Yamato Security | [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) | [github.com/Yamato-Security/takajo](https://github.com/Yamato-Security/takajo) |
+| Chainsaw | WithSecure Labs | [GPL v3](https://www.gnu.org/licenses/gpl-3.0.html) | [github.com/WithSecureLabs/chainsaw](https://github.com/WithSecureLabs/chainsaw) |
+| TruffleHog | Truffle Security | [AGPL v3](https://www.gnu.org/licenses/agpl-3.0.html) | [github.com/trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) |
+| Web-Check | Alicia Sykes (Lissy93) | [MIT](https://opensource.org/licenses/MIT) | [github.com/Lissy93/web-check](https://github.com/Lissy93/web-check) |
+
+### Copyleft Notices
+
+Several packaged tools use the **GNU Affero General Public License v3 (AGPL v3)** or **GPL v3**. These licences require that:
+
+- The full licence text and a link to the original source code are made available to users.
+- Any modifications to the covered software are released under the same licence.
+
+The Kasm workspace images **do not modify** any of the AGPL/GPL-covered tools; they only install them into a container environment. The original, unmodified source code for each tool is available at the links above.
+
+---
+
 <!-- KASM-REGISTRY-DISCOVERY-IDENTIFIER -->
