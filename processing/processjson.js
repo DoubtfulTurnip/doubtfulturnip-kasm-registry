@@ -74,12 +74,8 @@ glob("**/workspace.json", async function (err, files) {
 		modified: Date.now(),
 		workspaces: workspaces,
 		channels: [...channels],
-		default_channel: 'develop'
+		default_channel: channels.size > 0 ? [...channels].sort().slice(-1)[0] : null
 	};
-
-	if (channels.size === 0) {
-		json.default_channel = null
-	}
 
 	let data = JSON.stringify(json);
 
