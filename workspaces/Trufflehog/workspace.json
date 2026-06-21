@@ -8,9 +8,9 @@
   "compatibility": [
     {
       "version": "1.19.x",
-      "image": "ghcr.io/doubtfulturnip/trufflehog-kasm:1.18.0",
+      "image": "ghcr.io/doubtfulturnip/trufflehog-kasm:1.19.0",
       "uncompressed_size_mb": 4800,
-      "available_tags": ["1.18.0"]
+      "available_tags": ["1.19.0"]
     }
   ]
 }
