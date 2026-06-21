@@ -1,9 +1,5 @@
 1.0
 1.1
-claude_great-lovelace-v05pd9
 claude_update-tags-1.19.0
 feature_dependency_update
-snyk-fix-a41ccfff91d082b9497d020e50aeeccf
-snyk-upgrade-1edd27c8cb131286eb929b5bb107e739
-snyk-upgrade-716dd82d1468763abd567365fe47a2d5
 snyk-upgrade-aa1a6dd956ba080ff2fc6988f987d152
