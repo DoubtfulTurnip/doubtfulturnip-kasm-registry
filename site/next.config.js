@@ -3,7 +3,7 @@
 const nextConfig = {
   env: {
     name: 'DoubtfulTurnip',
-    description: 'The unofficial store for Kasm supported workspaces.',
+    description: 'Security, OSINT, and forensics workspaces for Kasm Workspaces 1.19.x.',
     icon: 'https://avatars.githubusercontent.com/u/23531986?v=4',
     listUrl: 'https://doubtfulturnip.github.io/doubtfulturnip-kasm-registry/',
     contactUrl: 'https://github.com/DoubtfulTurnip/doubtfulturnip-kasm-registry/issues',

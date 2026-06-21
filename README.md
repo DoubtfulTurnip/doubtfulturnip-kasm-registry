@@ -1,47 +1,71 @@
 # DoubtfulTurnip Kasm Workspaces Registry
 
-## Add this registry to your Kasm instance
+A third-party [Kasm Workspaces](https://www.kasmweb.com/) registry focused on **security research, OSINT, and forensics tooling** — all packaged as browser-accessible workspaces with no local installation required.
 
-1. In Kasm Workspaces go to **Admin → Workspaces → Workspaces Registry**
+Images are automatically built weekly and hosted on the GitHub Container Registry (GHCR). Source Dockerfiles live in [DoubtfulTurnip/kasm-custom-images](https://github.com/DoubtfulTurnip/kasm-custom-images).
+
+---
+
+## Add This Registry to Kasm
+
+1. In your Kasm instance go to **Admin → Workspaces → Workspaces Registry**
 2. Click **Add new**
 3. Paste the registry URL:
-
    ```
    https://doubtfulturnip.github.io/doubtfulturnip-kasm-registry/
    ```
 4. Click **Add Registry**
 
+Once added, click the filter icon next to the registry name in the Registry tab to show only workspaces from this registry.
+
 ---
 
 ## Available Workspaces
 
-### Bloodhound  
-Graph-based Active Directory analysis. Maps users, sessions, and privileges to identify attack paths and escalation opportunities.
+All workspaces target **Kasm 1.19.x** and **amd64** architecture. Images are hosted at `ghcr.io/doubtfulturnip/`.
 
-### Epaneul  
-Epagneul is a tool to visualize and investigate Windows event logs.  
+### Security
 
-### LogonTracer  
-Visualizes Windows Security Event logs to track logon behavior and lateral movement. Useful for forensics and intrusion analysis.
+| Workspace | Description | Image |
+|-----------|-------------|-------|
+| **BloodHound** | Graph-based Active Directory analysis by SpecterOps. Maps users, sessions, and privileges to identify attack paths and privilege escalation routes. Runs the full BloodHound CE stack via Docker-in-Docker. | `ghcr.io/doubtfulturnip/bloodhound-kasm` |
+| **Epagneul** | Visualizes Windows event logs as interactive graphs to reveal logon patterns, lateral movement, and suspicious account activity. Runs via Docker-in-Docker. | `ghcr.io/doubtfulturnip/epagneul-kasm` |
+| **Slasher** | Bulk IOC checker. Paste hashes, IPs, or domains — Slasher queries VirusTotal in parallel, shows live progress, and exports results as CSV. | `ghcr.io/doubtfulturnip/slasher-kasm` |
 
-### Sherlock  
-Find usernames across many social networks — useful for OSINT investigations.
+### Forensics
 
-### Slasher  
-Slasher is a bulk IOC checker. Paste hashes, IPs or domains, let Slasher query VirusTotal in parallel, watch progress live, then export results as a CSV file — all from a single web interface.
+| Workspace | Description | Image |
+|-----------|-------------|-------|
+| **Takajō Forensics** | Windows EVTX analysis combining Hayabusa v3.9.0, Takajō v2.16.1, and Chainsaw v2.16.0. Drop EVTX files onto the desktop — reports and an HTML ATT&CK timeline generate automatically. | `ghcr.io/doubtfulturnip/takajo-kasm` |
 
-### SocialAnalyzer  
-A tool for analyzing and finding a person’s presence across over 300 social media and online platforms.
+### OSINT
 
-### Takajo  
-A post-processing analysis tool that takes Hayabusa and Chainsaw output to generate high-level insights, identify suspicious behavior, and visualize TTPs mapped to MITRE ATT&CK.
-
-### TruffleHog  
-Scans for high-entropy secrets and credential patterns in local filesystems or repositories. Supports 800+ secret types. Provides a Web-UI to run scans.
-
-### Web-Check  
-Get an insight into the inner-workings of a given website: uncover potential attack vectors, analyze server architecture, view security configurations, and learn what technologies a site is using.
+| Workspace | Description | Image |
+|-----------|-------------|-------|
+| **Sherlock** | Streamlit WebUI for Sherlock — finds usernames across hundreds of social networks for OSINT investigations. Includes Tor support. | `ghcr.io/doubtfulturnip/sherlockwebui-kasm` |
+| **Social Analyzer** | Analyzes and finds a person's presence across 300+ social media and online platforms. Runs the Social Analyzer app image via Docker-in-Docker at runtime. | `ghcr.io/doubtfulturnip/socialanalyzer-kasm` |
+| **Web-Check** | Deep-dive OSINT for any website running as a Firefox kiosk. Uncovers attack surfaces, DNS records, security headers, server architecture, and tech stack. Built on web-check v2.1.0. | `ghcr.io/doubtfulturnip/webcheck-kasm` |
+| **TruffleHog** | Scans for secrets and leaked credentials (800+ types) in local filesystems or Git repositories. Includes Gobuster for directory scanning. Streamlit WebUI with offline wordlist support. | `ghcr.io/doubtfulturnip/trufflehog-kasm` |
 
 ---
 
-Happy Kasm’ing! 🚀
+## Image Hosting
+
+All workspaces are built and pushed to **GitHub Container Registry (GHCR)** via GitHub Actions. Builds trigger on every push to `main` and on a weekly schedule to pick up upstream application updates.
+
+To pull an image manually:
+```
+docker pull ghcr.io/doubtfulturnip/<image-name>:latest
+```
+
+---
+
+## Build Your Own
+
+Source Dockerfiles and GitHub Actions workflows are in the companion repository:
+
+**[DoubtfulTurnip/kasm-custom-images](https://github.com/DoubtfulTurnip/kasm-custom-images)**
+
+---
+
+<!-- KASM-REGISTRY-DISCOVERY-IDENTIFIER -->

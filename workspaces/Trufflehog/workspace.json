@@ -7,10 +7,10 @@
   "architecture": ["amd64"],
   "compatibility": [
     {
-      "version": "1.18.x",
+      "version": "1.19.x",
       "image": "ghcr.io/doubtfulturnip/trufflehog-kasm:1.18.0",
-      "uncompressed_size_mb": 600,
-      "available_tags": ["1.18.0", "latest"]
+      "uncompressed_size_mb": 4800,
+      "available_tags": ["1.18.0"]
     }
   ]
 }

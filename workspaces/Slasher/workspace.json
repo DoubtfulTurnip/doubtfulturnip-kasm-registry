@@ -1,6 +1,6 @@
 {
   "description": "Slasher is a bulk IOC checker that queries VirusTotal for hashes, IPs, or domains in parallel. It provides a web UI for filtering, downloading, and visualizing threat intelligence results.",
-  "docker_registry": "https://index.docker.io/v1/",
+  "docker_registry": "https://ghcr.io",
   "image_src": "slasher.png",
   "run_config": {
     "hostname": "kasm",
@@ -11,9 +11,9 @@
   "architecture": ["amd64"],
   "compatibility": [
     {
-      "version": "1.18.x",
-      "image": "bukshee/slasher-kasm:1.18.0",
-      "uncompressed_size_mb": 500,
+      "version": "1.19.x",
+      "image": "ghcr.io/doubtfulturnip/slasher-kasm:1.18.0",
+      "uncompressed_size_mb": 5600,
       "available_tags": ["1.18.0"]
     }
   ]
