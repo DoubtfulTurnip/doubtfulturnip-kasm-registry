@@ -11,7 +11,7 @@
   "architecture": ["amd64"],
   "compatibility": [
     {
-      "version": "1.18.x",
+      "version": "1.19.x",
       "image": "ghcr.io/doubtfulturnip/socialanalyzer-kasm:1.18.0",
       "uncompressed_size_mb": 5500,
       "available_tags": ["1.18.0"]
