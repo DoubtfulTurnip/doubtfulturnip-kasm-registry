@@ -14,7 +14,7 @@
       "version": "1.18.x",
       "image": "ghcr.io/doubtfulturnip/bloodhound-kasm:1.18.0",
       "uncompressed_size_mb": 5500,
-      "available_tags": ["1.18.0", "latest"]
+      "available_tags": ["1.18.0"]
     }
   ]
 }
