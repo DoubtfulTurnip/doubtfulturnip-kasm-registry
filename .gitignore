@@ -1,48 +1,21 @@
-# build output
+# Build output
 dist
 public
 .next
-target
-packages/next/wasm/@next
 out
+
+# Generated at build time — do not commit
 site/public/icons
 site/public/list.json
 
-# dependencies
+# Dependencies
 node_modules
 
-# logs & pids
+# Logs
 *.log
-pids
-*.cpuprofile
 
-# coverage
-.nyc_output
-coverage
-
-# test output
-test/**/out*
-test/**/next-env.d.ts
+# OS / editor
 .DS_Store
-/e2e-tests
-test/tmp/**
-
-# Editors
 **/.idea
 **/.#*
-.nvmrc
-
-# examples
-examples/**/out
-examples/**/.env*.local
-
-pr-stats.md
-test-timings.json
-
-# Vercel
 .vercel
-.now
-
-# Cache
-*.tsbuildinfo
-.swc/
