@@ -1,6 +1,6 @@
 {
   "description": "Streamlit-based, on-demand open source intelligence WebUI for Sherlock",
-  "docker_registry": "https://index.docker.io/v1/",
+  "docker_registry": "https://ghcr.io",
   "image_src": "sherlock.png",
   "run_config": {
     "hostname": "kasm"
@@ -11,9 +11,9 @@
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "bukshee/sherlockwebui-kasm:1.18.0",
-      "uncompressed_size_mb": 500,
-      "available_tags": ["1.18.0"]
+      "image": "ghcr.io/doubtfulturnip/sherlockwebui-kasm:1.18.0",
+      "uncompressed_size_mb": 11100,
+      "available_tags": ["1.18.0", "latest"]
     }
   ]
 }

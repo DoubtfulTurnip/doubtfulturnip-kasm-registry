@@ -1,6 +1,6 @@
 {
   "description": "On‐demand Windows EVTX forensics with Hayabusa + Takajō HTML server + Chainsaw in a desktop workspace",
-  "docker_registry": "https://index.docker.io/v1/",
+  "docker_registry": "https://ghcr.io",
   "image_src": "takajo.png",
   "run_config": {
     "hostname": "takajo"
@@ -11,9 +11,9 @@
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "bukshee/takajo-kasm:1.18.0",
-      "uncompressed_size_mb": 800,
-      "available_tags": ["1.18.0"]
+      "image": "ghcr.io/doubtfulturnip/takajo-kasm:1.18.0",
+      "uncompressed_size_mb": 10600,
+      "available_tags": ["1.18.0", "latest"]
     }
   ]
 }
