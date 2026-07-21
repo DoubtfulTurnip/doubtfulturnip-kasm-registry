@@ -1,5 +1,7 @@
 1.0
 1.1
 claude_update-tags-1.19.0
+depfu_update_site_yarn_autoprefixer-10.5.4
 feature_dependency_update
+fix_depfu-site-lockfile-and-ci-node
 snyk-upgrade-aa1a6dd956ba080ff2fc6988f987d152
