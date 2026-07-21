@@ -4,20 +4,36 @@ on:
   push:
     branches-ignore:
       - 'gh-pages'
-permissions:
-  contents: write
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - name: Build # Have to run processing first so the list.json exists to be included in the the deploy
-        run: |
-          npm ci --prefix processing 
-          npm ci --prefix site
-          ./build_all_branches.sh
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            processing/package-lock.json
+            site/package-lock.json
+
+      - name: Install processing dependencies
+        run: npm ci
+        working-directory: processing
+
+      - name: Install site dependencies
+        run: npm ci
+        working-directory: site
+
+      # Have to run processing first so list.json exists before the site is built for each branch
+      - name: Build registry
+        run: ./build_all_branches.sh
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
