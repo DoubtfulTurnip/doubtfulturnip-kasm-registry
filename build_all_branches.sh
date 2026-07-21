@@ -18,7 +18,7 @@ echo "$(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '^(HEAD|d
 for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '^(HEAD|develop|gh-pages)$'); do
     SANITIZED_BRANCH="$(echo "$BRANCH" | sed 's/\//_/g')"
     echo "$SANITIZED_BRANCH" >> base/versions.txt
-    git checkout "$BRANCH"
+    git checkout -f "$BRANCH"
 
     if ! node processing; then
         echo "::warning::processing failed for branch $BRANCH, skipping"
