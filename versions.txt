@@ -3,7 +3,6 @@
 claude_update-tags-1.19.0
 dependabot_github_actions_actions_checkout-7
 dependabot_github_actions_actions_setup-node-7
-dependabot_github_actions_actions_upload-artifact-7
 dependabot_npm_and_yarn_processing_glob-13.0.6
 dependabot_npm_and_yarn_site_eslint-10.8.1
 dependabot_npm_and_yarn_site_next-16.3.1
