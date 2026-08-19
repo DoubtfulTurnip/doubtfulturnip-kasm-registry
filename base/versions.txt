@@ -1,0 +1,9 @@
+1.0
+1.1
+claude_update-tags-1.19.0
+dependabot_github_actions_actions_checkout-7
+dependabot_npm_and_yarn_processing_glob-13.0.6
+dependabot_npm_and_yarn_site_postcss-8.5.26
+dependabot_npm_and_yarn_site_react-18.3.1
+feature_dependency_update
+snyk-upgrade-aa1a6dd956ba080ff2fc6988f987d152
