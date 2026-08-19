@@ -1,0 +1,5 @@
+1.0
+1.1
+claude_update-tags-1.19.0
+feature_dependency_update
+snyk-upgrade-aa1a6dd956ba080ff2fc6988f987d152
