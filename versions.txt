@@ -6,9 +6,9 @@ codex_fix-postcss-cve-2026-45623
 dependabot_github_actions_actions_checkout-7
 dependabot_github_actions_actions_setup-node-7
 dependabot_npm_and_yarn_processing_glob-13.0.6
-dependabot_npm_and_yarn_site_eslint-10.8.1
-dependabot_npm_and_yarn_site_next-16.3.1
-dependabot_npm_and_yarn_site_react-18.3.1
-dependabot_npm_and_yarn_site_tailwindcss-4.3.3
+dependabot_npm_and_yarn_site_eslint-10.9.0
+dependabot_npm_and_yarn_site_next-16.3.2
+dependabot_npm_and_yarn_site_react-19.2.8
+dependabot_npm_and_yarn_site_react-dom-19.2.8
 feature_dependency_update
 snyk-upgrade-aa1a6dd956ba080ff2fc6988f987d152
