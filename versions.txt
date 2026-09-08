@@ -7,7 +7,6 @@ dependabot_github_actions_actions_checkout-7
 dependabot_github_actions_actions_setup-node-7
 dependabot_npm_and_yarn_processing_glob-13.0.6
 dependabot_npm_and_yarn_site_eslint-10.9.0
-dependabot_npm_and_yarn_site_next-16.3.2
 dependabot_npm_and_yarn_site_react-19.2.8
 dependabot_npm_and_yarn_site_react-dom-19.2.8
 feature_dependency_update
