@@ -42,3 +42,12 @@ for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '
 done
 
 mv base public
+
+# A broken build for the default branch means the registry root (which
+# redirects to it) and Kasm's schema-list check both end up 404ing, even
+# though every step above only ever warns and keeps going. Fail loudly here
+# instead of silently publishing a non-functional registry.
+if [ ! -f "public/$DEFAULT/index.html" ] || [ ! -f "public/$DEFAULT/list.json" ]; then
+    echo "::error::Build for the default branch ($DEFAULT) did not produce an index.html/list.json — refusing to publish a broken registry."
+    exit 1
+fi

@@ -10,7 +10,6 @@ const nextConfig = {
   },
   reactStrictMode: true,
   output: 'export',
-  swcMinify: true,
   basePath: '/doubtfulturnip-kasm-registry/1.1',
   trailingSlash: true,
   images: {

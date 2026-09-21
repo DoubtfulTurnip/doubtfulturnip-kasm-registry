@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && rm -rf ../public && cp -a out ../public",
-    "deploy": "next build && rm -rf ../public && cp -a out ../public && touch ../public/.nojekyll",
+    "build": "next build --webpack && rm -rf ../public && cp -a out ../public",
+    "deploy": "next build --webpack && rm -rf ../public && cp -a out ../public && touch ../public/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,18 +14,6 @@
     "next": "16.3.5",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
     "react-notifications": "^1.7.4",
     "react-select": "^5.10.2"
   },
@@ -34,7 +22,7 @@
     "eslint": "10.10.0",
     "eslint-config-next": "^16.3.5",
     "postcss": "^8.5.28",
-    "tailwindcss": "^4.3.3"
+    "tailwindcss": "^3.4.19"
   },
   "overrides": {
     "postcss": "$postcss"
