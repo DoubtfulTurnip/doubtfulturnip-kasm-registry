@@ -22,6 +22,11 @@ for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '
 
     if ! node processing; then
         echo "::warning::processing failed for branch $BRANCH, skipping"
+        # processing already mkdir'd ./public before it crashed; if a later
+        # branch fails here after an earlier one succeeded, this leftover
+        # empty directory makes the final `mv base public` nest base/ inside
+        # it instead of renaming it, breaking the whole publish.
+        rm -rf public
         continue
     fi
 
@@ -41,6 +46,7 @@ for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '
     fi
 done
 
+rm -rf public
 mv base public
 
 # A broken build for the default branch means the registry root (which
