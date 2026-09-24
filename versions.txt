@@ -1,12 +1,12 @@
 1.0
 1.1
 claude_fix-build-loop-stray-public
+claude_fix-cicd-lockfile-and-per-branch-deps
 claude_serene-archimedes-ybhx5k
 claude_update-tags-1.19.0
 codex_fix-dependency-track-1.1
 codex_fix-postcss-cve-2026-45623
 dependabot_github_actions_dependabot_fetch-metadata-3
-dependabot_npm_and_yarn_site_npm-minor-patch-4ee7f9a52b
 dependabot_npm_and_yarn_site_tailwindcss-4.3.3
 feature_dependency_update
 pr-eslint-fixed
