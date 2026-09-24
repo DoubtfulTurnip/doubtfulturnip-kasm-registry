@@ -24,11 +24,11 @@ jobs:
             site/package-lock.json
 
       - name: Install processing dependencies
-        run: npm ci
+        run: npm install
         working-directory: processing
 
       - name: Install site dependencies
-        run: npm ci
+        run: npm install
         working-directory: site
 
       # Have to run processing first so list.json exists before the site is built for each branch
