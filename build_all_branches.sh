@@ -20,12 +20,18 @@ for BRANCH in $(git branch --remotes --format '%(refname:lstrip=3)' | grep -Ev '
     echo "$SANITIZED_BRANCH" >> base/versions.txt
     git checkout -f "$BRANCH"
 
-    # node_modules from the job-level `npm ci` belongs to whichever branch
+    # node_modules from the job-level install belongs to whichever branch
     # triggered this run. Without reinstalling per branch here, a dependency
     # bump on one branch (e.g. a dependabot PR) silently poisons the build
     # of every other branch in this same loop, including the default branch.
-    npm ci --prefix processing
-    npm ci --prefix site
+    # `npm install` (not `ci`) so a stale/out-of-sync lockfile on an old
+    # branch self-heals instead of hard-failing; if it still can't resolve,
+    # skip this branch like any other failure instead of aborting the script.
+    if ! npm install --prefix processing || ! npm install --prefix site; then
+        echo "::warning::dependency install failed for branch $BRANCH, skipping"
+        rm -rf public
+        continue
+    fi
 
     if ! node processing; then
         echo "::warning::processing failed for branch $BRANCH, skipping"
