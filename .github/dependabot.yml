@@ -11,6 +11,9 @@ updates:
     directory: "/site"
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
     groups:
       npm-minor-patch:
         update-types: ["minor", "patch"]
