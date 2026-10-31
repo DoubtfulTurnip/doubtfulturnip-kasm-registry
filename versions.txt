@@ -6,7 +6,6 @@ claude_serene-archimedes-ybhx5k
 claude_update-tags-1.19.0
 codex_fix-dependency-track-1.1
 codex_fix-postcss-cve-2026-45623
-depfu_update_processing_npm_glob-14.0.3
 feature_dependency_update
 pr-eslint-fixed
 pr-react-combined
