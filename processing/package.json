@@ -12,6 +12,6 @@
   "bugs": {},
   "devDependencies": {
     "folder-hash": "^4.1.4",
-    "glob": "^13.0.6"
+    "glob": "^14.0.3"
   }
 }
