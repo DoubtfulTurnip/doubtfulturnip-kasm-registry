@@ -1,6 +1,5 @@
 1.0
 1.1
-add-pr-agent
 claude_fix-build-loop-stray-public
 claude_fix-cicd-lockfile-and-per-branch-deps
 claude_serene-archimedes-ybhx5k
@@ -8,7 +7,6 @@ claude_update-tags-1.19.0
 codex_fix-dependency-track-1.1
 codex_fix-postcss-cve-2026-45623
 dependabot_npm_and_yarn_site_npm-minor-patch-281924105f
-dependabot_npm_and_yarn_site_npm-minor-patch-88f9ed0b8f
 feature_dependency_update
 pr-eslint-fixed
 pr-react-combined
